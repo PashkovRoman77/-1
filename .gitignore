@@ -1,55 +1,15 @@
-# Prerequisites
-*.d
+#include <stdio.h>
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+int main() {
+    int t1, t2, t3;
+    double time;
 
-# Linker output
-*.ilk
-*.map
-*.exp
+    printf("Введіть три значення:\n");
+    scanf("%d %d %d", &t1, &t2, &t3);
 
-# Precompiled Headers
-*.gch
-*.pch
+    time = (t1 + t2 + t3) / 3.0;
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+    printf("Час, необхідний для з'їдання пирога: %.2f годин\n", time);
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-
-# debug information files
-*.dwo
+    return 0;
+}
